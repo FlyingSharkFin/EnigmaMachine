@@ -2,6 +2,8 @@
     Dim intTempLBtn As Integer
     Dim intTempMBtn As Integer
     Dim intTempRBtn As Integer
+    Dim tempnum As Integer
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         intTempLBtn = 1
@@ -9,6 +11,7 @@
         intTempRBtn = 1
 
     End Sub
+
 
     Private Sub btnLrotor_Click(sender As Object, e As EventArgs) Handles btnLrotor.Click
 
@@ -55,4 +58,73 @@
 
     End Sub
 
+    Private Sub RotorDecrement(ByRef windowsection)
+
+        tempnum = Asc(windowsection.Text)
+        If tempnum = 65 Then
+            windowsection.text = "Z"
+        Else
+            windowsection.text = Chr(tempnum - 1)
+        End If
+
+    End Sub
+
+    Private Sub btnDecrementLrotor_Click(sender As Object, e As EventArgs) Handles btnDecrementLrotor.Click
+
+        RotorDecrement(labWindowLrotor)
+        RotorDecrement(labWindowLrotorNext)
+        RotorDecrement(labWindowLrotorPrev)
+
+    End Sub
+
+    Private Sub btnDecrementMrotor_Click(sender As Object, e As EventArgs) Handles btnDecrementMrotor.Click
+
+        RotorDecrement(labWindowMrotor)
+        RotorDecrement(labWindowMrotorNext)
+        RotorDecrement(labWindowMrotorPrev)
+
+    End Sub
+
+    Private Sub btnDecrementRrotor_Click(sender As Object, e As EventArgs) Handles btnDecrementRrotor.Click
+
+        RotorDecrement(labWindowRrotor)
+        RotorDecrement(labWindowRrotorNext)
+        RotorDecrement(labWindowRrotorPrev)
+
+    End Sub
+
+    Private Sub RotorIncrement(ByRef windowsection)
+
+        tempnum = Asc(windowsection.Text)
+        If tempnum = 90 Then
+            windowsection.text = "A"
+        Else
+            windowsection.text = Chr(tempnum + 1)
+        End If
+
+    End Sub
+
+    Private Sub btnIncrementLrotor_Click(sender As Object, e As EventArgs) Handles btnIncrementLrotor.Click
+
+        RotorIncrement(labWindowLrotor)
+        RotorIncrement(labWindowLrotorNext)
+        RotorIncrement(labWindowLrotorPrev)
+
+    End Sub
+
+    Private Sub btnIncrementMrotor_Click(sender As Object, e As EventArgs) Handles btnIncrementMrotor.Click
+
+        RotorIncrement(labWindowMrotor)
+        RotorIncrement(labWindowMrotorNext)
+        RotorIncrement(labWindowMrotorPrev)
+
+    End Sub
+
+    Private Sub btnIncrementRrotor_Click(sender As Object, e As EventArgs) Handles btnIncrementRrotor.Click
+
+        RotorIncrement(labWindowRrotor)
+        RotorIncrement(labWindowRrotorNext)
+        RotorIncrement(labWindowRrotorPrev)
+
+    End Sub
 End Class

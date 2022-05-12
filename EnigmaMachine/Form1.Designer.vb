@@ -41,6 +41,7 @@ Partial Class EnimgaMain
         Me.labWindowRrotorPrev = New System.Windows.Forms.Label()
         Me.labWindowRrotorNext = New System.Windows.Forms.Label()
         Me.labWindowRrotor = New System.Windows.Forms.Label()
+        Me.labQlamp = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnLrotor
@@ -172,7 +173,7 @@ Partial Class EnimgaMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.labWindowLrotorNext.BackColor = System.Drawing.Color.Tan
         Me.labWindowLrotorNext.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labWindowLrotorNext.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.labWindowLrotorNext.ForeColor = System.Drawing.SystemColors.ControlText
         Me.labWindowLrotorNext.Location = New System.Drawing.Point(203, 127)
         Me.labWindowLrotorNext.Name = "labWindowLrotorNext"
         Me.labWindowLrotorNext.Size = New System.Drawing.Size(30, 30)
@@ -187,7 +188,7 @@ Partial Class EnimgaMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.labWindowLrotorPrev.BackColor = System.Drawing.Color.Tan
         Me.labWindowLrotorPrev.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labWindowLrotorPrev.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.labWindowLrotorPrev.ForeColor = System.Drawing.SystemColors.ControlText
         Me.labWindowLrotorPrev.Location = New System.Drawing.Point(203, 187)
         Me.labWindowLrotorPrev.Name = "labWindowLrotorPrev"
         Me.labWindowLrotorPrev.Size = New System.Drawing.Size(30, 30)
@@ -202,7 +203,7 @@ Partial Class EnimgaMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.labWindowMrotorPrev.BackColor = System.Drawing.Color.Tan
         Me.labWindowMrotorPrev.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labWindowMrotorPrev.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.labWindowMrotorPrev.ForeColor = System.Drawing.SystemColors.ControlText
         Me.labWindowMrotorPrev.Location = New System.Drawing.Point(428, 187)
         Me.labWindowMrotorPrev.Name = "labWindowMrotorPrev"
         Me.labWindowMrotorPrev.Size = New System.Drawing.Size(30, 30)
@@ -217,7 +218,7 @@ Partial Class EnimgaMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.labWindowMrotorNext.BackColor = System.Drawing.Color.Tan
         Me.labWindowMrotorNext.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labWindowMrotorNext.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.labWindowMrotorNext.ForeColor = System.Drawing.SystemColors.ControlText
         Me.labWindowMrotorNext.Location = New System.Drawing.Point(428, 127)
         Me.labWindowMrotorNext.Name = "labWindowMrotorNext"
         Me.labWindowMrotorNext.Size = New System.Drawing.Size(30, 30)
@@ -246,7 +247,7 @@ Partial Class EnimgaMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.labWindowRrotorPrev.BackColor = System.Drawing.Color.Tan
         Me.labWindowRrotorPrev.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labWindowRrotorPrev.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.labWindowRrotorPrev.ForeColor = System.Drawing.SystemColors.ControlText
         Me.labWindowRrotorPrev.Location = New System.Drawing.Point(653, 187)
         Me.labWindowRrotorPrev.Name = "labWindowRrotorPrev"
         Me.labWindowRrotorPrev.Size = New System.Drawing.Size(30, 30)
@@ -261,7 +262,7 @@ Partial Class EnimgaMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.labWindowRrotorNext.BackColor = System.Drawing.Color.Tan
         Me.labWindowRrotorNext.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labWindowRrotorNext.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.labWindowRrotorNext.ForeColor = System.Drawing.SystemColors.ControlText
         Me.labWindowRrotorNext.Location = New System.Drawing.Point(653, 127)
         Me.labWindowRrotorNext.Name = "labWindowRrotorNext"
         Me.labWindowRrotorNext.Size = New System.Drawing.Size(30, 30)
@@ -283,6 +284,22 @@ Partial Class EnimgaMain
         Me.labWindowRrotor.Text = "A"
         Me.labWindowRrotor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'labQlamp
+        '
+        Me.labQlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labQlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labQlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labQlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labQlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOff
+        Me.labQlamp.Location = New System.Drawing.Point(58, 351)
+        Me.labQlamp.Name = "labQlamp"
+        Me.labQlamp.Size = New System.Drawing.Size(50, 50)
+        Me.labQlamp.TabIndex = 22
+        Me.labQlamp.Text = "A"
+        Me.labQlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'EnimgaMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -290,6 +307,7 @@ Partial Class EnimgaMain
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(884, 911)
+        Me.Controls.Add(Me.labQlamp)
         Me.Controls.Add(Me.labWindowRrotorPrev)
         Me.Controls.Add(Me.labWindowRrotorNext)
         Me.Controls.Add(Me.labWindowRrotor)
@@ -332,4 +350,5 @@ Partial Class EnimgaMain
     Friend WithEvents labWindowRrotorPrev As Label
     Friend WithEvents labWindowRrotorNext As Label
     Friend WithEvents labWindowRrotor As Label
+    Friend WithEvents labQlamp As Label
 End Class

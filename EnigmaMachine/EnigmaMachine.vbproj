@@ -119,5 +119,11 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\labLampOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\labLampOn.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
