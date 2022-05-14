@@ -3,6 +3,9 @@
     Dim intTempMBtn As Integer
     Dim intTempRBtn As Integer
     Dim tempnum As Integer
+    Dim keypressed As String
+    Dim keystring As Label
+    Dim i As Integer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -127,4 +130,11 @@
         RotorIncrement(labWindowRrotorPrev)
 
     End Sub
+
+    'Private Sub EnimgaMain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+    '    keypressed = e.KeyCode
+    '    keystring = "lab" + keypressed + "lamp"
+    '    keystring.image
+    'End Sub
+
 End Class

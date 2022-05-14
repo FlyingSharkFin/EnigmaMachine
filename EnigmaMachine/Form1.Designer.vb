@@ -42,6 +42,31 @@ Partial Class EnimgaMain
         Me.labWindowRrotorNext = New System.Windows.Forms.Label()
         Me.labWindowRrotor = New System.Windows.Forms.Label()
         Me.labQlamp = New System.Windows.Forms.Label()
+        Me.labWlamp = New System.Windows.Forms.Label()
+        Me.labElamp = New System.Windows.Forms.Label()
+        Me.labRlamp = New System.Windows.Forms.Label()
+        Me.labTlamp = New System.Windows.Forms.Label()
+        Me.labYlamp = New System.Windows.Forms.Label()
+        Me.labUlamp = New System.Windows.Forms.Label()
+        Me.labIlamp = New System.Windows.Forms.Label()
+        Me.labOlamp = New System.Windows.Forms.Label()
+        Me.labPlamp = New System.Windows.Forms.Label()
+        Me.labAlamp = New System.Windows.Forms.Label()
+        Me.labSlamp = New System.Windows.Forms.Label()
+        Me.labDlamp = New System.Windows.Forms.Label()
+        Me.labFlamp = New System.Windows.Forms.Label()
+        Me.labGlamp = New System.Windows.Forms.Label()
+        Me.labHlamp = New System.Windows.Forms.Label()
+        Me.labJlamp = New System.Windows.Forms.Label()
+        Me.labKlamp = New System.Windows.Forms.Label()
+        Me.labLlamp = New System.Windows.Forms.Label()
+        Me.labZlamp = New System.Windows.Forms.Label()
+        Me.labXlamp = New System.Windows.Forms.Label()
+        Me.labClamp = New System.Windows.Forms.Label()
+        Me.labVlamp = New System.Windows.Forms.Label()
+        Me.labBlamp = New System.Windows.Forms.Label()
+        Me.labNlamp = New System.Windows.Forms.Label()
+        Me.labMlamp = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnLrotor
@@ -292,13 +317,413 @@ Partial Class EnimgaMain
         Me.labQlamp.BackColor = System.Drawing.Color.Transparent
         Me.labQlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labQlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labQlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOff
-        Me.labQlamp.Location = New System.Drawing.Point(58, 351)
+        Me.labQlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labQlamp.Location = New System.Drawing.Point(54, 303)
         Me.labQlamp.Name = "labQlamp"
-        Me.labQlamp.Size = New System.Drawing.Size(50, 50)
+        Me.labQlamp.Size = New System.Drawing.Size(65, 65)
         Me.labQlamp.TabIndex = 22
-        Me.labQlamp.Text = "A"
+        Me.labQlamp.Text = "Q"
         Me.labQlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labWlamp
+        '
+        Me.labWlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labWlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labWlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labWlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labWlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labWlamp.Location = New System.Drawing.Point(142, 303)
+        Me.labWlamp.Name = "labWlamp"
+        Me.labWlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labWlamp.TabIndex = 23
+        Me.labWlamp.Text = "W"
+        Me.labWlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labElamp
+        '
+        Me.labElamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labElamp.BackColor = System.Drawing.Color.Transparent
+        Me.labElamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labElamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labElamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labElamp.Location = New System.Drawing.Point(230, 303)
+        Me.labElamp.Name = "labElamp"
+        Me.labElamp.Size = New System.Drawing.Size(65, 65)
+        Me.labElamp.TabIndex = 24
+        Me.labElamp.Text = "E"
+        Me.labElamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labRlamp
+        '
+        Me.labRlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labRlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labRlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labRlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labRlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labRlamp.Location = New System.Drawing.Point(318, 303)
+        Me.labRlamp.Name = "labRlamp"
+        Me.labRlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labRlamp.TabIndex = 25
+        Me.labRlamp.Text = "R"
+        Me.labRlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labTlamp
+        '
+        Me.labTlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labTlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labTlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labTlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labTlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labTlamp.Location = New System.Drawing.Point(406, 303)
+        Me.labTlamp.Name = "labTlamp"
+        Me.labTlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labTlamp.TabIndex = 26
+        Me.labTlamp.Text = "T"
+        Me.labTlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labYlamp
+        '
+        Me.labYlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labYlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labYlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labYlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labYlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labYlamp.Location = New System.Drawing.Point(149, 477)
+        Me.labYlamp.Name = "labYlamp"
+        Me.labYlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labYlamp.TabIndex = 27
+        Me.labYlamp.Text = "Y"
+        Me.labYlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labUlamp
+        '
+        Me.labUlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labUlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labUlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labUlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labUlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labUlamp.Location = New System.Drawing.Point(582, 303)
+        Me.labUlamp.Name = "labUlamp"
+        Me.labUlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labUlamp.TabIndex = 28
+        Me.labUlamp.Text = "U"
+        Me.labUlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labIlamp
+        '
+        Me.labIlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labIlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labIlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labIlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labIlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labIlamp.Location = New System.Drawing.Point(670, 303)
+        Me.labIlamp.Name = "labIlamp"
+        Me.labIlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labIlamp.TabIndex = 29
+        Me.labIlamp.Text = "I"
+        Me.labIlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labOlamp
+        '
+        Me.labOlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labOlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labOlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labOlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labOlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labOlamp.Location = New System.Drawing.Point(758, 303)
+        Me.labOlamp.Name = "labOlamp"
+        Me.labOlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labOlamp.TabIndex = 30
+        Me.labOlamp.Text = "O"
+        Me.labOlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labPlamp
+        '
+        Me.labPlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labPlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labPlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labPlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labPlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labPlamp.Location = New System.Drawing.Point(63, 477)
+        Me.labPlamp.Name = "labPlamp"
+        Me.labPlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labPlamp.TabIndex = 31
+        Me.labPlamp.Text = "P"
+        Me.labPlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labAlamp
+        '
+        Me.labAlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labAlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labAlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labAlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labAlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labAlamp.Location = New System.Drawing.Point(102, 390)
+        Me.labAlamp.Name = "labAlamp"
+        Me.labAlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labAlamp.TabIndex = 32
+        Me.labAlamp.Text = "A"
+        Me.labAlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labSlamp
+        '
+        Me.labSlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labSlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labSlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labSlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labSlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labSlamp.Location = New System.Drawing.Point(188, 390)
+        Me.labSlamp.Name = "labSlamp"
+        Me.labSlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labSlamp.TabIndex = 33
+        Me.labSlamp.Text = "S"
+        Me.labSlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labDlamp
+        '
+        Me.labDlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labDlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labDlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labDlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labDlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labDlamp.Location = New System.Drawing.Point(275, 390)
+        Me.labDlamp.Name = "labDlamp"
+        Me.labDlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labDlamp.TabIndex = 34
+        Me.labDlamp.Text = "D"
+        Me.labDlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labFlamp
+        '
+        Me.labFlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labFlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labFlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labFlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labFlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labFlamp.Location = New System.Drawing.Point(362, 390)
+        Me.labFlamp.Name = "labFlamp"
+        Me.labFlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labFlamp.TabIndex = 35
+        Me.labFlamp.Text = "F"
+        Me.labFlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labGlamp
+        '
+        Me.labGlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labGlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labGlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labGlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labGlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labGlamp.Location = New System.Drawing.Point(449, 390)
+        Me.labGlamp.Name = "labGlamp"
+        Me.labGlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labGlamp.TabIndex = 36
+        Me.labGlamp.Text = "G"
+        Me.labGlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labHlamp
+        '
+        Me.labHlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labHlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labHlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labHlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labHlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labHlamp.Location = New System.Drawing.Point(536, 390)
+        Me.labHlamp.Name = "labHlamp"
+        Me.labHlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labHlamp.TabIndex = 37
+        Me.labHlamp.Text = "H"
+        Me.labHlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labJlamp
+        '
+        Me.labJlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labJlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labJlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labJlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labJlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labJlamp.Location = New System.Drawing.Point(623, 390)
+        Me.labJlamp.Name = "labJlamp"
+        Me.labJlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labJlamp.TabIndex = 38
+        Me.labJlamp.Text = "J"
+        Me.labJlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labKlamp
+        '
+        Me.labKlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labKlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labKlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labKlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labKlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labKlamp.Location = New System.Drawing.Point(710, 390)
+        Me.labKlamp.Name = "labKlamp"
+        Me.labKlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labKlamp.TabIndex = 39
+        Me.labKlamp.Text = "K"
+        Me.labKlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labLlamp
+        '
+        Me.labLlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labLlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labLlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labLlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labLlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labLlamp.Location = New System.Drawing.Point(751, 477)
+        Me.labLlamp.Name = "labLlamp"
+        Me.labLlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labLlamp.TabIndex = 40
+        Me.labLlamp.Text = "L"
+        Me.labLlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labZlamp
+        '
+        Me.labZlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labZlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labZlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labZlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labZlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labZlamp.Location = New System.Drawing.Point(494, 303)
+        Me.labZlamp.Name = "labZlamp"
+        Me.labZlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labZlamp.TabIndex = 41
+        Me.labZlamp.Text = "Z"
+        Me.labZlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labXlamp
+        '
+        Me.labXlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labXlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labXlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labXlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labXlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labXlamp.Location = New System.Drawing.Point(235, 477)
+        Me.labXlamp.Name = "labXlamp"
+        Me.labXlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labXlamp.TabIndex = 42
+        Me.labXlamp.Text = "X"
+        Me.labXlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labClamp
+        '
+        Me.labClamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labClamp.BackColor = System.Drawing.Color.Transparent
+        Me.labClamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labClamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labClamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labClamp.Location = New System.Drawing.Point(321, 477)
+        Me.labClamp.Name = "labClamp"
+        Me.labClamp.Size = New System.Drawing.Size(65, 65)
+        Me.labClamp.TabIndex = 43
+        Me.labClamp.Text = "C"
+        Me.labClamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labVlamp
+        '
+        Me.labVlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labVlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labVlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labVlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labVlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labVlamp.Location = New System.Drawing.Point(407, 477)
+        Me.labVlamp.Name = "labVlamp"
+        Me.labVlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labVlamp.TabIndex = 44
+        Me.labVlamp.Text = "V"
+        Me.labVlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labBlamp
+        '
+        Me.labBlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labBlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labBlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labBlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labBlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labBlamp.Location = New System.Drawing.Point(493, 477)
+        Me.labBlamp.Name = "labBlamp"
+        Me.labBlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labBlamp.TabIndex = 45
+        Me.labBlamp.Text = "B"
+        Me.labBlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labNlamp
+        '
+        Me.labNlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labNlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labNlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labNlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labNlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labNlamp.Location = New System.Drawing.Point(579, 477)
+        Me.labNlamp.Name = "labNlamp"
+        Me.labNlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labNlamp.TabIndex = 46
+        Me.labNlamp.Text = "N"
+        Me.labNlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'labMlamp
+        '
+        Me.labMlamp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.labMlamp.BackColor = System.Drawing.Color.Transparent
+        Me.labMlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labMlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.labMlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
+        Me.labMlamp.Location = New System.Drawing.Point(665, 477)
+        Me.labMlamp.Name = "labMlamp"
+        Me.labMlamp.Size = New System.Drawing.Size(65, 65)
+        Me.labMlamp.TabIndex = 47
+        Me.labMlamp.Text = "M"
+        Me.labMlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'EnimgaMain
         '
@@ -307,6 +732,31 @@ Partial Class EnimgaMain
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(884, 911)
+        Me.Controls.Add(Me.labMlamp)
+        Me.Controls.Add(Me.labNlamp)
+        Me.Controls.Add(Me.labBlamp)
+        Me.Controls.Add(Me.labVlamp)
+        Me.Controls.Add(Me.labClamp)
+        Me.Controls.Add(Me.labXlamp)
+        Me.Controls.Add(Me.labZlamp)
+        Me.Controls.Add(Me.labLlamp)
+        Me.Controls.Add(Me.labKlamp)
+        Me.Controls.Add(Me.labJlamp)
+        Me.Controls.Add(Me.labHlamp)
+        Me.Controls.Add(Me.labGlamp)
+        Me.Controls.Add(Me.labFlamp)
+        Me.Controls.Add(Me.labDlamp)
+        Me.Controls.Add(Me.labSlamp)
+        Me.Controls.Add(Me.labAlamp)
+        Me.Controls.Add(Me.labPlamp)
+        Me.Controls.Add(Me.labOlamp)
+        Me.Controls.Add(Me.labIlamp)
+        Me.Controls.Add(Me.labUlamp)
+        Me.Controls.Add(Me.labYlamp)
+        Me.Controls.Add(Me.labTlamp)
+        Me.Controls.Add(Me.labRlamp)
+        Me.Controls.Add(Me.labElamp)
+        Me.Controls.Add(Me.labWlamp)
         Me.Controls.Add(Me.labQlamp)
         Me.Controls.Add(Me.labWindowRrotorPrev)
         Me.Controls.Add(Me.labWindowRrotorNext)
@@ -351,4 +801,29 @@ Partial Class EnimgaMain
     Friend WithEvents labWindowRrotorNext As Label
     Friend WithEvents labWindowRrotor As Label
     Friend WithEvents labQlamp As Label
+    Friend WithEvents labWlamp As Label
+    Friend WithEvents labElamp As Label
+    Friend WithEvents labRlamp As Label
+    Friend WithEvents labTlamp As Label
+    Friend WithEvents labYlamp As Label
+    Friend WithEvents labUlamp As Label
+    Friend WithEvents labIlamp As Label
+    Friend WithEvents labOlamp As Label
+    Friend WithEvents labPlamp As Label
+    Friend WithEvents labAlamp As Label
+    Friend WithEvents labSlamp As Label
+    Friend WithEvents labDlamp As Label
+    Friend WithEvents labFlamp As Label
+    Friend WithEvents labGlamp As Label
+    Friend WithEvents labHlamp As Label
+    Friend WithEvents labJlamp As Label
+    Friend WithEvents labKlamp As Label
+    Friend WithEvents labLlamp As Label
+    Friend WithEvents labZlamp As Label
+    Friend WithEvents labXlamp As Label
+    Friend WithEvents labClamp As Label
+    Friend WithEvents labVlamp As Label
+    Friend WithEvents labBlamp As Label
+    Friend WithEvents labNlamp As Label
+    Friend WithEvents labMlamp As Label
 End Class
