@@ -1,4 +1,4 @@
-﻿Public Class EnimgaMain
+﻿Public Class EnigmaMain
     Dim intTempLBtn As Integer
     Dim intTempMBtn As Integer
     Dim intTempRBtn As Integer
@@ -6,13 +6,17 @@
     Dim keypressed As String
     Dim keystring As Label
     Dim i As Integer
+    Dim keypressindex As Integer
+    Dim lampidentifier As String
+    'Dim lampdict As Dictionary(Of KeyEventArgs, Label) = New Dictionary(Of KeyEventArgs, Label)
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         intTempLBtn = 1
         intTempMBtn = 1
         intTempRBtn = 1
-
+        KeyPreview = True
+        keypressindex = 0
     End Sub
 
 
@@ -131,10 +135,47 @@
 
     End Sub
 
+    Private Sub Enigmamain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+
+        While keypressindex = 0
+            If e.KeyCode >= 65 And e.KeyCode <= 90 Then
+                keypressed = Chr(e.KeyCode)
+                lampidentifier = "lab" + keypressed + "lamp"
+                For Each label In Panel1.Controls.OfType(Of Label)
+                    If label.Name.Equals(lampidentifier) Then
+                        label.ImageIndex = 1
+                        label.ForeColor = Color.Black
+                    End If
+                Next
+                keypressindex = 1
+            End If
+        End While
+
+    End Sub
+
+    Private Sub EnigmaMain_KeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
+
+        If e.KeyCode = Asc(keypressed) Then
+            For Each label In Panel1.Controls.OfType(Of Label)
+                If label.ImageIndex = 1 Then
+                    label.ImageIndex = 0
+                    label.ForeColor = Color.White
+                End If
+            Next
+
+            keypressindex = 0
+        End If
+
+
+    End Sub
+
+
     'Private Sub EnimgaMain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
     '    keypressed = e.KeyCode
     '    keystring = "lab" + keypressed + "lamp"
     '    keystring.image
     'End Sub
+    'Object.name("labQlamp").imageindex = 1
+    'labQlamp.imageindex = 1
 
 End Class

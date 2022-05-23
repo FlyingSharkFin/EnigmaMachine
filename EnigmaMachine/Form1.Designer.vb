@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class EnimgaMain
+Partial Class EnigmaMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,8 @@ Partial Class EnimgaMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EnimgaMain))
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EnigmaMain))
         Me.btnLrotor = New System.Windows.Forms.Button()
         Me.btnMrotor = New System.Windows.Forms.Button()
         Me.btnRrotor = New System.Windows.Forms.Button()
@@ -42,6 +43,7 @@ Partial Class EnimgaMain
         Me.labWindowRrotorNext = New System.Windows.Forms.Label()
         Me.labWindowRrotor = New System.Windows.Forms.Label()
         Me.labQlamp = New System.Windows.Forms.Label()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.labWlamp = New System.Windows.Forms.Label()
         Me.labElamp = New System.Windows.Forms.Label()
         Me.labRlamp = New System.Windows.Forms.Label()
@@ -67,6 +69,8 @@ Partial Class EnimgaMain
         Me.labBlamp = New System.Windows.Forms.Label()
         Me.labNlamp = New System.Windows.Forms.Label()
         Me.labMlamp = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnLrotor
@@ -317,13 +321,21 @@ Partial Class EnimgaMain
         Me.labQlamp.BackColor = System.Drawing.Color.Transparent
         Me.labQlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labQlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labQlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labQlamp.Location = New System.Drawing.Point(54, 303)
+        Me.labQlamp.ImageIndex = 0
+        Me.labQlamp.ImageList = Me.ImageList1
+        Me.labQlamp.Location = New System.Drawing.Point(19, 10)
         Me.labQlamp.Name = "labQlamp"
         Me.labQlamp.Size = New System.Drawing.Size(65, 65)
         Me.labQlamp.TabIndex = 22
         Me.labQlamp.Text = "Q"
         Me.labQlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "labLampOffV2.png")
+        Me.ImageList1.Images.SetKeyName(1, "labLampOnV2.png")
         '
         'labWlamp
         '
@@ -333,8 +345,9 @@ Partial Class EnimgaMain
         Me.labWlamp.BackColor = System.Drawing.Color.Transparent
         Me.labWlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labWlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labWlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labWlamp.Location = New System.Drawing.Point(142, 303)
+        Me.labWlamp.ImageIndex = 0
+        Me.labWlamp.ImageList = Me.ImageList1
+        Me.labWlamp.Location = New System.Drawing.Point(107, 10)
         Me.labWlamp.Name = "labWlamp"
         Me.labWlamp.Size = New System.Drawing.Size(65, 65)
         Me.labWlamp.TabIndex = 23
@@ -349,8 +362,9 @@ Partial Class EnimgaMain
         Me.labElamp.BackColor = System.Drawing.Color.Transparent
         Me.labElamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labElamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labElamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labElamp.Location = New System.Drawing.Point(230, 303)
+        Me.labElamp.ImageIndex = 0
+        Me.labElamp.ImageList = Me.ImageList1
+        Me.labElamp.Location = New System.Drawing.Point(195, 10)
         Me.labElamp.Name = "labElamp"
         Me.labElamp.Size = New System.Drawing.Size(65, 65)
         Me.labElamp.TabIndex = 24
@@ -365,8 +379,9 @@ Partial Class EnimgaMain
         Me.labRlamp.BackColor = System.Drawing.Color.Transparent
         Me.labRlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labRlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labRlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labRlamp.Location = New System.Drawing.Point(318, 303)
+        Me.labRlamp.ImageIndex = 0
+        Me.labRlamp.ImageList = Me.ImageList1
+        Me.labRlamp.Location = New System.Drawing.Point(283, 10)
         Me.labRlamp.Name = "labRlamp"
         Me.labRlamp.Size = New System.Drawing.Size(65, 65)
         Me.labRlamp.TabIndex = 25
@@ -381,8 +396,9 @@ Partial Class EnimgaMain
         Me.labTlamp.BackColor = System.Drawing.Color.Transparent
         Me.labTlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labTlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labTlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labTlamp.Location = New System.Drawing.Point(406, 303)
+        Me.labTlamp.ImageIndex = 0
+        Me.labTlamp.ImageList = Me.ImageList1
+        Me.labTlamp.Location = New System.Drawing.Point(371, 10)
         Me.labTlamp.Name = "labTlamp"
         Me.labTlamp.Size = New System.Drawing.Size(65, 65)
         Me.labTlamp.TabIndex = 26
@@ -397,8 +413,9 @@ Partial Class EnimgaMain
         Me.labYlamp.BackColor = System.Drawing.Color.Transparent
         Me.labYlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labYlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labYlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labYlamp.Location = New System.Drawing.Point(149, 477)
+        Me.labYlamp.ImageIndex = 0
+        Me.labYlamp.ImageList = Me.ImageList1
+        Me.labYlamp.Location = New System.Drawing.Point(114, 184)
         Me.labYlamp.Name = "labYlamp"
         Me.labYlamp.Size = New System.Drawing.Size(65, 65)
         Me.labYlamp.TabIndex = 27
@@ -413,8 +430,9 @@ Partial Class EnimgaMain
         Me.labUlamp.BackColor = System.Drawing.Color.Transparent
         Me.labUlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labUlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labUlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labUlamp.Location = New System.Drawing.Point(582, 303)
+        Me.labUlamp.ImageIndex = 0
+        Me.labUlamp.ImageList = Me.ImageList1
+        Me.labUlamp.Location = New System.Drawing.Point(547, 10)
         Me.labUlamp.Name = "labUlamp"
         Me.labUlamp.Size = New System.Drawing.Size(65, 65)
         Me.labUlamp.TabIndex = 28
@@ -429,8 +447,9 @@ Partial Class EnimgaMain
         Me.labIlamp.BackColor = System.Drawing.Color.Transparent
         Me.labIlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labIlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labIlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labIlamp.Location = New System.Drawing.Point(670, 303)
+        Me.labIlamp.ImageIndex = 0
+        Me.labIlamp.ImageList = Me.ImageList1
+        Me.labIlamp.Location = New System.Drawing.Point(635, 10)
         Me.labIlamp.Name = "labIlamp"
         Me.labIlamp.Size = New System.Drawing.Size(65, 65)
         Me.labIlamp.TabIndex = 29
@@ -445,8 +464,9 @@ Partial Class EnimgaMain
         Me.labOlamp.BackColor = System.Drawing.Color.Transparent
         Me.labOlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labOlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labOlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labOlamp.Location = New System.Drawing.Point(758, 303)
+        Me.labOlamp.ImageIndex = 0
+        Me.labOlamp.ImageList = Me.ImageList1
+        Me.labOlamp.Location = New System.Drawing.Point(723, 10)
         Me.labOlamp.Name = "labOlamp"
         Me.labOlamp.Size = New System.Drawing.Size(65, 65)
         Me.labOlamp.TabIndex = 30
@@ -461,8 +481,9 @@ Partial Class EnimgaMain
         Me.labPlamp.BackColor = System.Drawing.Color.Transparent
         Me.labPlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labPlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labPlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labPlamp.Location = New System.Drawing.Point(63, 477)
+        Me.labPlamp.ImageIndex = 0
+        Me.labPlamp.ImageList = Me.ImageList1
+        Me.labPlamp.Location = New System.Drawing.Point(28, 184)
         Me.labPlamp.Name = "labPlamp"
         Me.labPlamp.Size = New System.Drawing.Size(65, 65)
         Me.labPlamp.TabIndex = 31
@@ -477,8 +498,9 @@ Partial Class EnimgaMain
         Me.labAlamp.BackColor = System.Drawing.Color.Transparent
         Me.labAlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labAlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labAlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labAlamp.Location = New System.Drawing.Point(102, 390)
+        Me.labAlamp.ImageIndex = 0
+        Me.labAlamp.ImageList = Me.ImageList1
+        Me.labAlamp.Location = New System.Drawing.Point(67, 97)
         Me.labAlamp.Name = "labAlamp"
         Me.labAlamp.Size = New System.Drawing.Size(65, 65)
         Me.labAlamp.TabIndex = 32
@@ -493,8 +515,9 @@ Partial Class EnimgaMain
         Me.labSlamp.BackColor = System.Drawing.Color.Transparent
         Me.labSlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labSlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labSlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labSlamp.Location = New System.Drawing.Point(188, 390)
+        Me.labSlamp.ImageIndex = 0
+        Me.labSlamp.ImageList = Me.ImageList1
+        Me.labSlamp.Location = New System.Drawing.Point(153, 97)
         Me.labSlamp.Name = "labSlamp"
         Me.labSlamp.Size = New System.Drawing.Size(65, 65)
         Me.labSlamp.TabIndex = 33
@@ -509,8 +532,9 @@ Partial Class EnimgaMain
         Me.labDlamp.BackColor = System.Drawing.Color.Transparent
         Me.labDlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labDlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labDlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labDlamp.Location = New System.Drawing.Point(275, 390)
+        Me.labDlamp.ImageIndex = 0
+        Me.labDlamp.ImageList = Me.ImageList1
+        Me.labDlamp.Location = New System.Drawing.Point(240, 97)
         Me.labDlamp.Name = "labDlamp"
         Me.labDlamp.Size = New System.Drawing.Size(65, 65)
         Me.labDlamp.TabIndex = 34
@@ -525,8 +549,9 @@ Partial Class EnimgaMain
         Me.labFlamp.BackColor = System.Drawing.Color.Transparent
         Me.labFlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labFlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labFlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labFlamp.Location = New System.Drawing.Point(362, 390)
+        Me.labFlamp.ImageIndex = 0
+        Me.labFlamp.ImageList = Me.ImageList1
+        Me.labFlamp.Location = New System.Drawing.Point(327, 97)
         Me.labFlamp.Name = "labFlamp"
         Me.labFlamp.Size = New System.Drawing.Size(65, 65)
         Me.labFlamp.TabIndex = 35
@@ -541,8 +566,9 @@ Partial Class EnimgaMain
         Me.labGlamp.BackColor = System.Drawing.Color.Transparent
         Me.labGlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labGlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labGlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labGlamp.Location = New System.Drawing.Point(449, 390)
+        Me.labGlamp.ImageIndex = 0
+        Me.labGlamp.ImageList = Me.ImageList1
+        Me.labGlamp.Location = New System.Drawing.Point(414, 97)
         Me.labGlamp.Name = "labGlamp"
         Me.labGlamp.Size = New System.Drawing.Size(65, 65)
         Me.labGlamp.TabIndex = 36
@@ -557,8 +583,9 @@ Partial Class EnimgaMain
         Me.labHlamp.BackColor = System.Drawing.Color.Transparent
         Me.labHlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labHlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labHlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labHlamp.Location = New System.Drawing.Point(536, 390)
+        Me.labHlamp.ImageIndex = 0
+        Me.labHlamp.ImageList = Me.ImageList1
+        Me.labHlamp.Location = New System.Drawing.Point(501, 97)
         Me.labHlamp.Name = "labHlamp"
         Me.labHlamp.Size = New System.Drawing.Size(65, 65)
         Me.labHlamp.TabIndex = 37
@@ -573,8 +600,9 @@ Partial Class EnimgaMain
         Me.labJlamp.BackColor = System.Drawing.Color.Transparent
         Me.labJlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labJlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labJlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labJlamp.Location = New System.Drawing.Point(623, 390)
+        Me.labJlamp.ImageIndex = 0
+        Me.labJlamp.ImageList = Me.ImageList1
+        Me.labJlamp.Location = New System.Drawing.Point(588, 97)
         Me.labJlamp.Name = "labJlamp"
         Me.labJlamp.Size = New System.Drawing.Size(65, 65)
         Me.labJlamp.TabIndex = 38
@@ -589,8 +617,9 @@ Partial Class EnimgaMain
         Me.labKlamp.BackColor = System.Drawing.Color.Transparent
         Me.labKlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labKlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labKlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labKlamp.Location = New System.Drawing.Point(710, 390)
+        Me.labKlamp.ImageIndex = 0
+        Me.labKlamp.ImageList = Me.ImageList1
+        Me.labKlamp.Location = New System.Drawing.Point(675, 97)
         Me.labKlamp.Name = "labKlamp"
         Me.labKlamp.Size = New System.Drawing.Size(65, 65)
         Me.labKlamp.TabIndex = 39
@@ -605,8 +634,9 @@ Partial Class EnimgaMain
         Me.labLlamp.BackColor = System.Drawing.Color.Transparent
         Me.labLlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labLlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labLlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labLlamp.Location = New System.Drawing.Point(751, 477)
+        Me.labLlamp.ImageIndex = 0
+        Me.labLlamp.ImageList = Me.ImageList1
+        Me.labLlamp.Location = New System.Drawing.Point(716, 184)
         Me.labLlamp.Name = "labLlamp"
         Me.labLlamp.Size = New System.Drawing.Size(65, 65)
         Me.labLlamp.TabIndex = 40
@@ -621,8 +651,9 @@ Partial Class EnimgaMain
         Me.labZlamp.BackColor = System.Drawing.Color.Transparent
         Me.labZlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labZlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labZlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labZlamp.Location = New System.Drawing.Point(494, 303)
+        Me.labZlamp.ImageIndex = 0
+        Me.labZlamp.ImageList = Me.ImageList1
+        Me.labZlamp.Location = New System.Drawing.Point(459, 10)
         Me.labZlamp.Name = "labZlamp"
         Me.labZlamp.Size = New System.Drawing.Size(65, 65)
         Me.labZlamp.TabIndex = 41
@@ -637,8 +668,9 @@ Partial Class EnimgaMain
         Me.labXlamp.BackColor = System.Drawing.Color.Transparent
         Me.labXlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labXlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labXlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labXlamp.Location = New System.Drawing.Point(235, 477)
+        Me.labXlamp.ImageIndex = 0
+        Me.labXlamp.ImageList = Me.ImageList1
+        Me.labXlamp.Location = New System.Drawing.Point(200, 184)
         Me.labXlamp.Name = "labXlamp"
         Me.labXlamp.Size = New System.Drawing.Size(65, 65)
         Me.labXlamp.TabIndex = 42
@@ -653,8 +685,9 @@ Partial Class EnimgaMain
         Me.labClamp.BackColor = System.Drawing.Color.Transparent
         Me.labClamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labClamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labClamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labClamp.Location = New System.Drawing.Point(321, 477)
+        Me.labClamp.ImageIndex = 0
+        Me.labClamp.ImageList = Me.ImageList1
+        Me.labClamp.Location = New System.Drawing.Point(286, 184)
         Me.labClamp.Name = "labClamp"
         Me.labClamp.Size = New System.Drawing.Size(65, 65)
         Me.labClamp.TabIndex = 43
@@ -669,8 +702,9 @@ Partial Class EnimgaMain
         Me.labVlamp.BackColor = System.Drawing.Color.Transparent
         Me.labVlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labVlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labVlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labVlamp.Location = New System.Drawing.Point(407, 477)
+        Me.labVlamp.ImageIndex = 0
+        Me.labVlamp.ImageList = Me.ImageList1
+        Me.labVlamp.Location = New System.Drawing.Point(372, 184)
         Me.labVlamp.Name = "labVlamp"
         Me.labVlamp.Size = New System.Drawing.Size(65, 65)
         Me.labVlamp.TabIndex = 44
@@ -685,8 +719,9 @@ Partial Class EnimgaMain
         Me.labBlamp.BackColor = System.Drawing.Color.Transparent
         Me.labBlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labBlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labBlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labBlamp.Location = New System.Drawing.Point(493, 477)
+        Me.labBlamp.ImageIndex = 0
+        Me.labBlamp.ImageList = Me.ImageList1
+        Me.labBlamp.Location = New System.Drawing.Point(458, 184)
         Me.labBlamp.Name = "labBlamp"
         Me.labBlamp.Size = New System.Drawing.Size(65, 65)
         Me.labBlamp.TabIndex = 45
@@ -701,8 +736,9 @@ Partial Class EnimgaMain
         Me.labNlamp.BackColor = System.Drawing.Color.Transparent
         Me.labNlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labNlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labNlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labNlamp.Location = New System.Drawing.Point(579, 477)
+        Me.labNlamp.ImageIndex = 0
+        Me.labNlamp.ImageList = Me.ImageList1
+        Me.labNlamp.Location = New System.Drawing.Point(544, 184)
         Me.labNlamp.Name = "labNlamp"
         Me.labNlamp.Size = New System.Drawing.Size(65, 65)
         Me.labNlamp.TabIndex = 46
@@ -717,47 +753,57 @@ Partial Class EnimgaMain
         Me.labMlamp.BackColor = System.Drawing.Color.Transparent
         Me.labMlamp.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labMlamp.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.labMlamp.Image = Global.EnigmaMachine.My.Resources.Resources.labLampOffV21
-        Me.labMlamp.Location = New System.Drawing.Point(665, 477)
+        Me.labMlamp.ImageIndex = 0
+        Me.labMlamp.ImageList = Me.ImageList1
+        Me.labMlamp.Location = New System.Drawing.Point(630, 184)
         Me.labMlamp.Name = "labMlamp"
         Me.labMlamp.Size = New System.Drawing.Size(65, 65)
         Me.labMlamp.TabIndex = 47
         Me.labMlamp.Text = "M"
         Me.labMlamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'EnimgaMain
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.labMlamp)
+        Me.Panel1.Controls.Add(Me.labNlamp)
+        Me.Panel1.Controls.Add(Me.labBlamp)
+        Me.Panel1.Controls.Add(Me.labVlamp)
+        Me.Panel1.Controls.Add(Me.labClamp)
+        Me.Panel1.Controls.Add(Me.labXlamp)
+        Me.Panel1.Controls.Add(Me.labZlamp)
+        Me.Panel1.Controls.Add(Me.labLlamp)
+        Me.Panel1.Controls.Add(Me.labKlamp)
+        Me.Panel1.Controls.Add(Me.labJlamp)
+        Me.Panel1.Controls.Add(Me.labHlamp)
+        Me.Panel1.Controls.Add(Me.labGlamp)
+        Me.Panel1.Controls.Add(Me.labFlamp)
+        Me.Panel1.Controls.Add(Me.labDlamp)
+        Me.Panel1.Controls.Add(Me.labSlamp)
+        Me.Panel1.Controls.Add(Me.labAlamp)
+        Me.Panel1.Controls.Add(Me.labPlamp)
+        Me.Panel1.Controls.Add(Me.labOlamp)
+        Me.Panel1.Controls.Add(Me.labIlamp)
+        Me.Panel1.Controls.Add(Me.labUlamp)
+        Me.Panel1.Controls.Add(Me.labYlamp)
+        Me.Panel1.Controls.Add(Me.labTlamp)
+        Me.Panel1.Controls.Add(Me.labRlamp)
+        Me.Panel1.Controls.Add(Me.labElamp)
+        Me.Panel1.Controls.Add(Me.labWlamp)
+        Me.Panel1.Controls.Add(Me.labQlamp)
+        Me.Panel1.Location = New System.Drawing.Point(35, 293)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(807, 257)
+        Me.Panel1.TabIndex = 48
+        '
+        'EnigmaMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.EnigmaMachine.My.Resources.Resources.images
         Me.ClientSize = New System.Drawing.Size(884, 911)
-        Me.Controls.Add(Me.labMlamp)
-        Me.Controls.Add(Me.labNlamp)
-        Me.Controls.Add(Me.labBlamp)
-        Me.Controls.Add(Me.labVlamp)
-        Me.Controls.Add(Me.labClamp)
-        Me.Controls.Add(Me.labXlamp)
-        Me.Controls.Add(Me.labZlamp)
-        Me.Controls.Add(Me.labLlamp)
-        Me.Controls.Add(Me.labKlamp)
-        Me.Controls.Add(Me.labJlamp)
-        Me.Controls.Add(Me.labHlamp)
-        Me.Controls.Add(Me.labGlamp)
-        Me.Controls.Add(Me.labFlamp)
-        Me.Controls.Add(Me.labDlamp)
-        Me.Controls.Add(Me.labSlamp)
-        Me.Controls.Add(Me.labAlamp)
-        Me.Controls.Add(Me.labPlamp)
-        Me.Controls.Add(Me.labOlamp)
-        Me.Controls.Add(Me.labIlamp)
-        Me.Controls.Add(Me.labUlamp)
-        Me.Controls.Add(Me.labYlamp)
-        Me.Controls.Add(Me.labTlamp)
-        Me.Controls.Add(Me.labRlamp)
-        Me.Controls.Add(Me.labElamp)
-        Me.Controls.Add(Me.labWlamp)
-        Me.Controls.Add(Me.labQlamp)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.labWindowRrotorPrev)
         Me.Controls.Add(Me.labWindowRrotorNext)
         Me.Controls.Add(Me.labWindowRrotor)
@@ -776,8 +822,9 @@ Partial Class EnimgaMain
         Me.Controls.Add(Me.btnRrotor)
         Me.Controls.Add(Me.btnMrotor)
         Me.Controls.Add(Me.btnLrotor)
-        Me.Name = "EnimgaMain"
+        Me.Name = "EnigmaMain"
         Me.Text = "EnigmaMain"
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -826,4 +873,6 @@ Partial Class EnimgaMain
     Friend WithEvents labBlamp As Label
     Friend WithEvents labNlamp As Label
     Friend WithEvents labMlamp As Label
+    Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents Panel1 As Panel
 End Class

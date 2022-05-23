@@ -131,5 +131,8 @@
   <ItemGroup>
     <None Include="Resources\labLampOffV21.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
