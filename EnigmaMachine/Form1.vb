@@ -30,6 +30,8 @@
     Dim reflected As Boolean
     Dim inputletter As String
     Dim temp As String
+    Dim nextrotorrotate As Boolean
+    Dim outputletter As String
 
 
 
@@ -198,16 +200,21 @@
         While keypressindex = 0
             If e.KeyCode >= 65 And e.KeyCode <= 90 Then
                 keypressed = Chr(e.KeyCode)
-                lampidentifier = "lab" + keypressed + "lamp"
+                outputletter = RotorCycle(keypressed)
+                lampidentifier = "lab" + outputletter + "lamp"
                 For Each label In Panel1.Controls.OfType(Of Label)
                     If label.Name.Equals(lampidentifier) Then
                         label.ImageIndex = 1
                         label.ForeColor = Color.Black
                     End If
                 Next
+                InputTextbox.Text = InputTextbox.Text + keypressed
+                OutputTextbox.Text = OutputTextbox.Text + outputletter
                 keypressindex = 1
             End If
         End While
+
+
 
     End Sub
 
@@ -229,23 +236,29 @@
 
     End Sub
 
-    Sub RotorCycle()
+    Function RotorCycle(inputletter)
+        rnotch = ""
         reflected = False
-        inputletter = keypressed
         'inputletter = PlugboardFunc(inputletter)
-        inputletter = RotorFunc(inputletter, rightrotor, rnotch, labWindowRrotor)
-        inputletter = RotorFunc(inputletter, middlerotor, mnotch, labWindowMrotor)
-        inputletter = RotorFunc(inputletter, leftrotor, lnotch, labWindowLrotor)
+        inputletter = RotorFunc(inputletter, rightrotor, rnotch, labWindowRrotor, labWindowRrotorNext, labWindowRrotorPrev)
+        inputletter = RotorFunc(inputletter, middlerotor, mnotch, labWindowMrotor, labWindowMrotorNext, labWindowMrotorPrev)
+        inputletter = RotorFunc(inputletter, leftrotor, lnotch, labWindowLrotor, labWindowLrotorNext, labWindowLrotorPrev)
         inputletter = ReflectorFunc(inputletter)
         reflected = True
-        inputletter = RotorFunc(inputletter, leftrotor, lnotch, labWindowLrotor)
-        inputletter = RotorFunc(inputletter, middlerotor, mnotch, labWindowMrotor)
-        inputletter = RotorFunc(inputletter, rightrotor, rnotch, labWindowRrotor)
+        inputletter = RotorFunc(inputletter, leftrotor, lnotch, labWindowLrotor, labWindowLrotorNext, labWindowLrotorPrev)
+        inputletter = RotorFunc(inputletter, middlerotor, mnotch, labWindowMrotor, labWindowMrotorNext, labWindowMrotorPrev)
+        inputletter = RotorFunc(inputletter, rightrotor, rnotch, labWindowRrotor, labWindowRrotorNext, labWindowRrotorPrev)
         'inputletter = PlugboardFunc(inputletter)
-    End Sub
+        RotorCycle = keypressed
+    End Function
 
 
     Function RotorFunc(letter, rotor, notch, window, windowprev, windownext)
+
+        Dim offset As Integer
+        Dim newletter As String
+
+        MsgBox(NameOf(rotor))
 
         If reflected = True Then
             For i = 1 To 26
@@ -254,18 +267,58 @@
                 rotor(2, i) = temp
             Next
 
-        ElseIf 
+        ElseIf NameOf(rotor) = ("leftrotor") Then
+            RotorIncrement(window, windowprev, windownext)
 
+        ElseIf nextrotorrotate = True Then
+            RotorIncrement(window, windowprev, windownext)
+            nextrotorrotate = False
+        End If
 
+        If window.text = notch Then
+            nextrotorrotate = True
         End If
 
 
+        offset = Asc(window.text) - 65
 
+        If Asc(letter) + offset <= 90 Then
+            letter = Chr(Asc(letter) + offset)
+        Else
+            letter = Chr(Asc(letter) + offset - 26)
+        End If
+
+        newletter = "!!!if you see this - it is broken!!!"
+
+        For i = 1 To 26
+            If letter = rotor(1, i) Then
+                newletter = rotor(2, i)
+            End If
+        Next
+
+        If Asc(newletter) - offset >= 65 Then
+            newletter = Chr(Asc(newletter) + offset)
+        Else
+            newletter = Chr(Asc(newletter) + offset + 26)
+        End If
+        RotorFunc = newletter
     End Function
 
     Function ReflectorFunc(letter)
 
+        Dim newletter As String
+        newletter = "!!!if you see this - it is broken!!!"
+
+        For i = 1 To 26
+            If letter = reflector(1, i) Then
+                newletter = reflector(2, i)
+            End If
+        Next
+        ReflectorFunc = newletter
+
     End Function
+
+
     'Private Sub EnimgaMain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
     '    keypressed = e.KeyCode
     '    keystring = "lab" + keypressed + "lamp"

@@ -52,8 +52,8 @@ Partial Class EnigmaMain
         Me.labNlamp = New System.Windows.Forms.Label()
         Me.labMlamp = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.OutputTextbox = New System.Windows.Forms.TextBox()
+        Me.InputTextbox = New System.Windows.Forms.TextBox()
         Me.btnLrotor = New System.Windows.Forms.Button()
         Me.btnMrotor = New System.Windows.Forms.Button()
         Me.btnRrotor = New System.Windows.Forms.Button()
@@ -560,27 +560,28 @@ Partial Class EnigmaMain
         Me.Panel1.Size = New System.Drawing.Size(807, 257)
         Me.Panel1.TabIndex = 48
         '
-        'TextBox2
+        'OutputTextbox
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.AntiqueWhite
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(450, 802)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox2.Size = New System.Drawing.Size(425, 175)
-        Me.TextBox2.TabIndex = 52
+        Me.OutputTextbox.BackColor = System.Drawing.Color.AntiqueWhite
+        Me.OutputTextbox.Enabled = False
+        Me.OutputTextbox.Location = New System.Drawing.Point(450, 802)
+        Me.OutputTextbox.Multiline = True
+        Me.OutputTextbox.Name = "OutputTextbox"
+        Me.OutputTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.OutputTextbox.Size = New System.Drawing.Size(425, 175)
+        Me.OutputTextbox.TabIndex = 52
         '
-        'TextBox1
+        'InputTextbox
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.AntiqueWhite
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(9, 802)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox1.Size = New System.Drawing.Size(425, 175)
-        Me.TextBox1.TabIndex = 53
+        Me.InputTextbox.BackColor = System.Drawing.Color.AntiqueWhite
+        Me.InputTextbox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.InputTextbox.Enabled = False
+        Me.InputTextbox.Location = New System.Drawing.Point(9, 802)
+        Me.InputTextbox.Multiline = True
+        Me.InputTextbox.Name = "InputTextbox"
+        Me.InputTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.InputTextbox.Size = New System.Drawing.Size(425, 175)
+        Me.InputTextbox.TabIndex = 53
         '
         'btnLrotor
         '
@@ -853,8 +854,8 @@ Partial Class EnigmaMain
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.BackgroundImage = Global.EnigmaMachine.My.Resources.Resources.images
         Me.ClientSize = New System.Drawing.Size(884, 1041)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.InputTextbox)
+        Me.Controls.Add(Me.OutputTextbox)
         Me.Controls.Add(Me.btnReflectorC)
         Me.Controls.Add(Me.btnReflectorB)
         Me.Controls.Add(Me.Panel1)
@@ -915,8 +916,8 @@ Partial Class EnigmaMain
     Friend WithEvents labMlamp As Label
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents OutputTextbox As TextBox
+    Friend WithEvents InputTextbox As TextBox
     Friend WithEvents btnLrotor As Button
     Friend WithEvents btnMrotor As Button
     Friend WithEvents btnRrotor As Button
