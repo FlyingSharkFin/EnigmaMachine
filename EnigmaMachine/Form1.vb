@@ -34,6 +34,10 @@
     Dim outputletter As String
 
 
+    Dim leftrotortempbool As Boolean 'fix this
+
+
+
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -237,11 +241,18 @@
     End Sub
 
     Function RotorCycle(inputletter)
-        rnotch = ""
+        'nextrotorrotate = False
         reflected = False
         'inputletter = PlugboardFunc(inputletter)
+        leftrotortempbool = True
         inputletter = RotorFunc(inputletter, rightrotor, rnotch, labWindowRrotor, labWindowRrotorNext, labWindowRrotorPrev)
+        leftrotortempbool = False
         inputletter = RotorFunc(inputletter, middlerotor, mnotch, labWindowMrotor, labWindowMrotorNext, labWindowMrotorPrev)
+
+        'If labWindowMrotor.Text = mnotch Then
+        'RotorIncrement(labWindowMrotor, labWindowMrotorNext, labWindowMrotorPrev)
+        'End If
+
         inputletter = RotorFunc(inputletter, leftrotor, lnotch, labWindowLrotor, labWindowLrotorNext, labWindowLrotorPrev)
         inputletter = ReflectorFunc(inputletter)
         reflected = True
@@ -249,16 +260,17 @@
         inputletter = RotorFunc(inputletter, middlerotor, mnotch, labWindowMrotor, labWindowMrotorNext, labWindowMrotorPrev)
         inputletter = RotorFunc(inputletter, rightrotor, rnotch, labWindowRrotor, labWindowRrotorNext, labWindowRrotorPrev)
         'inputletter = PlugboardFunc(inputletter)
-        RotorCycle = keypressed
+        RotorCycle = inputletter
     End Function
 
 
-    Function RotorFunc(letter, rotor, notch, window, windowprev, windownext)
+    Function RotorFunc(letter, rotor, notch, window, windownext, windowprev)
 
         Dim offset As Integer
         Dim newletter As String
 
-        MsgBox(NameOf(rotor))
+        'MsgBox(window.text)
+        'MsgBox(notch)
 
         If reflected = True Then
             For i = 1 To 26
@@ -267,20 +279,22 @@
                 rotor(2, i) = temp
             Next
 
-        ElseIf NameOf(rotor) = ("leftrotor") Then
+        ElseIf leftrotortempbool = True Then
             RotorIncrement(window, windowprev, windownext)
 
-        ElseIf nextrotorrotate = True Then
-            RotorIncrement(window, windowprev, windownext)
-            nextrotorrotate = False
+            'ElseIf nextrotorrotate = True Then
+            '    RotorIncrement(window, windowprev, windownext)
+            '    nextrotorrotate = False
         End If
 
-        If window.text = notch Then
-            nextrotorrotate = True
-        End If
+        'If windowprev.text = notch Then
+        'nextrotorrotate = True
+        'End If
 
 
         offset = Asc(window.text) - 65
+        'MsgBox(Asc(letter) + offset)
+
 
         If Asc(letter) + offset <= 90 Then
             letter = Chr(Asc(letter) + offset)
@@ -295,12 +309,12 @@
                 newletter = rotor(2, i)
             End If
         Next
-
         If Asc(newletter) - offset >= 65 Then
-            newletter = Chr(Asc(newletter) + offset)
+            newletter = Chr(Asc(newletter) - offset)
         Else
-            newletter = Chr(Asc(newletter) + offset + 26)
+            newletter = Chr(Asc(newletter) - offset + 26)
         End If
+
         RotorFunc = newletter
     End Function
 
