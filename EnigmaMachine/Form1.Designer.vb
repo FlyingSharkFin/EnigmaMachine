@@ -74,6 +74,11 @@ Partial Class EnigmaMain
         Me.labWindowRrotorPrev = New System.Windows.Forms.Label()
         Me.btnReflectorB = New System.Windows.Forms.Button()
         Me.btnReflectorC = New System.Windows.Forms.Button()
+        Me.btnOpenPlugboard = New System.Windows.Forms.Button()
+        Me.btnExittomenu = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnPurge = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -564,6 +569,7 @@ Partial Class EnigmaMain
         '
         Me.OutputTextbox.BackColor = System.Drawing.Color.AntiqueWhite
         Me.OutputTextbox.Enabled = False
+        Me.OutputTextbox.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OutputTextbox.Location = New System.Drawing.Point(450, 802)
         Me.OutputTextbox.Multiline = True
         Me.OutputTextbox.Name = "OutputTextbox"
@@ -576,6 +582,7 @@ Partial Class EnigmaMain
         Me.InputTextbox.BackColor = System.Drawing.Color.AntiqueWhite
         Me.InputTextbox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.InputTextbox.Enabled = False
+        Me.InputTextbox.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.InputTextbox.Location = New System.Drawing.Point(9, 802)
         Me.InputTextbox.Multiline = True
         Me.InputTextbox.Name = "InputTextbox"
@@ -588,7 +595,7 @@ Partial Class EnigmaMain
         Me.btnLrotor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnLrotor.Location = New System.Drawing.Point(203, 35)
+        Me.btnLrotor.Location = New System.Drawing.Point(202, 35)
         Me.btnLrotor.Name = "btnLrotor"
         Me.btnLrotor.Size = New System.Drawing.Size(30, 30)
         Me.btnLrotor.TabIndex = 0
@@ -600,7 +607,7 @@ Partial Class EnigmaMain
         Me.btnMrotor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnMrotor.Location = New System.Drawing.Point(428, 35)
+        Me.btnMrotor.Location = New System.Drawing.Point(427, 35)
         Me.btnMrotor.Name = "btnMrotor"
         Me.btnMrotor.Size = New System.Drawing.Size(30, 30)
         Me.btnMrotor.TabIndex = 1
@@ -612,7 +619,7 @@ Partial Class EnigmaMain
         Me.btnRrotor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRrotor.Location = New System.Drawing.Point(653, 35)
+        Me.btnRrotor.Location = New System.Drawing.Point(652, 35)
         Me.btnRrotor.Name = "btnRrotor"
         Me.btnRrotor.Size = New System.Drawing.Size(30, 30)
         Me.btnRrotor.TabIndex = 2
@@ -624,7 +631,7 @@ Partial Class EnigmaMain
         Me.btnDecrementLrotor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnDecrementLrotor.Location = New System.Drawing.Point(203, 82)
+        Me.btnDecrementLrotor.Location = New System.Drawing.Point(202, 82)
         Me.btnDecrementLrotor.Name = "btnDecrementLrotor"
         Me.btnDecrementLrotor.Size = New System.Drawing.Size(30, 30)
         Me.btnDecrementLrotor.TabIndex = 3
@@ -636,7 +643,7 @@ Partial Class EnigmaMain
         Me.btnIncrementLrotor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnIncrementLrotor.Location = New System.Drawing.Point(203, 232)
+        Me.btnIncrementLrotor.Location = New System.Drawing.Point(202, 232)
         Me.btnIncrementLrotor.Name = "btnIncrementLrotor"
         Me.btnIncrementLrotor.Size = New System.Drawing.Size(30, 30)
         Me.btnIncrementLrotor.TabIndex = 4
@@ -648,7 +655,7 @@ Partial Class EnigmaMain
         Me.btnDecrementMrotor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnDecrementMrotor.Location = New System.Drawing.Point(428, 82)
+        Me.btnDecrementMrotor.Location = New System.Drawing.Point(427, 82)
         Me.btnDecrementMrotor.Name = "btnDecrementMrotor"
         Me.btnDecrementMrotor.Size = New System.Drawing.Size(30, 30)
         Me.btnDecrementMrotor.TabIndex = 5
@@ -660,7 +667,7 @@ Partial Class EnigmaMain
         Me.btnIncrementMrotor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnIncrementMrotor.Location = New System.Drawing.Point(428, 232)
+        Me.btnIncrementMrotor.Location = New System.Drawing.Point(427, 232)
         Me.btnIncrementMrotor.Name = "btnIncrementMrotor"
         Me.btnIncrementMrotor.Size = New System.Drawing.Size(30, 30)
         Me.btnIncrementMrotor.TabIndex = 6
@@ -672,7 +679,7 @@ Partial Class EnigmaMain
         Me.btnDecrementRrotor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnDecrementRrotor.Location = New System.Drawing.Point(653, 82)
+        Me.btnDecrementRrotor.Location = New System.Drawing.Point(652, 79)
         Me.btnDecrementRrotor.Name = "btnDecrementRrotor"
         Me.btnDecrementRrotor.Size = New System.Drawing.Size(30, 30)
         Me.btnDecrementRrotor.TabIndex = 7
@@ -684,7 +691,7 @@ Partial Class EnigmaMain
         Me.btnIncrementRrotor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnIncrementRrotor.Location = New System.Drawing.Point(653, 232)
+        Me.btnIncrementRrotor.Location = New System.Drawing.Point(652, 229)
         Me.btnIncrementRrotor.Name = "btnIncrementRrotor"
         Me.btnIncrementRrotor.Size = New System.Drawing.Size(30, 30)
         Me.btnIncrementRrotor.TabIndex = 8
@@ -698,7 +705,7 @@ Partial Class EnigmaMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.labWindowLrotor.BackColor = System.Drawing.Color.AntiqueWhite
         Me.labWindowLrotor.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labWindowLrotor.Location = New System.Drawing.Point(203, 157)
+        Me.labWindowLrotor.Location = New System.Drawing.Point(202, 157)
         Me.labWindowLrotor.Name = "labWindowLrotor"
         Me.labWindowLrotor.Size = New System.Drawing.Size(30, 30)
         Me.labWindowLrotor.TabIndex = 9
@@ -713,7 +720,7 @@ Partial Class EnigmaMain
         Me.labWindowLrotorNext.BackColor = System.Drawing.Color.Tan
         Me.labWindowLrotorNext.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labWindowLrotorNext.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.labWindowLrotorNext.Location = New System.Drawing.Point(203, 127)
+        Me.labWindowLrotorNext.Location = New System.Drawing.Point(202, 127)
         Me.labWindowLrotorNext.Name = "labWindowLrotorNext"
         Me.labWindowLrotorNext.Size = New System.Drawing.Size(30, 30)
         Me.labWindowLrotorNext.TabIndex = 12
@@ -728,7 +735,7 @@ Partial Class EnigmaMain
         Me.labWindowLrotorPrev.BackColor = System.Drawing.Color.Tan
         Me.labWindowLrotorPrev.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labWindowLrotorPrev.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.labWindowLrotorPrev.Location = New System.Drawing.Point(203, 187)
+        Me.labWindowLrotorPrev.Location = New System.Drawing.Point(202, 187)
         Me.labWindowLrotorPrev.Name = "labWindowLrotorPrev"
         Me.labWindowLrotorPrev.Size = New System.Drawing.Size(30, 30)
         Me.labWindowLrotorPrev.TabIndex = 15
@@ -742,7 +749,7 @@ Partial Class EnigmaMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.labWindowMrotor.BackColor = System.Drawing.Color.AntiqueWhite
         Me.labWindowMrotor.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labWindowMrotor.Location = New System.Drawing.Point(428, 157)
+        Me.labWindowMrotor.Location = New System.Drawing.Point(427, 157)
         Me.labWindowMrotor.Name = "labWindowMrotor"
         Me.labWindowMrotor.Size = New System.Drawing.Size(30, 30)
         Me.labWindowMrotor.TabIndex = 16
@@ -757,7 +764,7 @@ Partial Class EnigmaMain
         Me.labWindowMrotorNext.BackColor = System.Drawing.Color.Tan
         Me.labWindowMrotorNext.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labWindowMrotorNext.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.labWindowMrotorNext.Location = New System.Drawing.Point(428, 127)
+        Me.labWindowMrotorNext.Location = New System.Drawing.Point(427, 127)
         Me.labWindowMrotorNext.Name = "labWindowMrotorNext"
         Me.labWindowMrotorNext.Size = New System.Drawing.Size(30, 30)
         Me.labWindowMrotorNext.TabIndex = 17
@@ -772,7 +779,7 @@ Partial Class EnigmaMain
         Me.labWindowMrotorPrev.BackColor = System.Drawing.Color.Tan
         Me.labWindowMrotorPrev.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labWindowMrotorPrev.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.labWindowMrotorPrev.Location = New System.Drawing.Point(428, 187)
+        Me.labWindowMrotorPrev.Location = New System.Drawing.Point(427, 187)
         Me.labWindowMrotorPrev.Name = "labWindowMrotorPrev"
         Me.labWindowMrotorPrev.Size = New System.Drawing.Size(30, 30)
         Me.labWindowMrotorPrev.TabIndex = 18
@@ -786,7 +793,7 @@ Partial Class EnigmaMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.labWindowRrotor.BackColor = System.Drawing.Color.AntiqueWhite
         Me.labWindowRrotor.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labWindowRrotor.Location = New System.Drawing.Point(653, 157)
+        Me.labWindowRrotor.Location = New System.Drawing.Point(652, 154)
         Me.labWindowRrotor.Name = "labWindowRrotor"
         Me.labWindowRrotor.Size = New System.Drawing.Size(30, 30)
         Me.labWindowRrotor.TabIndex = 19
@@ -801,7 +808,7 @@ Partial Class EnigmaMain
         Me.labWindowRrotorNext.BackColor = System.Drawing.Color.Tan
         Me.labWindowRrotorNext.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labWindowRrotorNext.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.labWindowRrotorNext.Location = New System.Drawing.Point(653, 127)
+        Me.labWindowRrotorNext.Location = New System.Drawing.Point(652, 124)
         Me.labWindowRrotorNext.Name = "labWindowRrotorNext"
         Me.labWindowRrotorNext.Size = New System.Drawing.Size(30, 30)
         Me.labWindowRrotorNext.TabIndex = 20
@@ -816,7 +823,7 @@ Partial Class EnigmaMain
         Me.labWindowRrotorPrev.BackColor = System.Drawing.Color.Tan
         Me.labWindowRrotorPrev.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labWindowRrotorPrev.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.labWindowRrotorPrev.Location = New System.Drawing.Point(653, 187)
+        Me.labWindowRrotorPrev.Location = New System.Drawing.Point(652, 184)
         Me.labWindowRrotorPrev.Name = "labWindowRrotorPrev"
         Me.labWindowRrotorPrev.Size = New System.Drawing.Size(30, 30)
         Me.labWindowRrotorPrev.TabIndex = 21
@@ -847,6 +854,58 @@ Partial Class EnigmaMain
         Me.btnReflectorC.Text = "C"
         Me.btnReflectorC.UseVisualStyleBackColor = True
         '
+        'btnOpenPlugboard
+        '
+        Me.btnOpenPlugboard.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnOpenPlugboard.Font = New System.Drawing.Font("Courier New", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOpenPlugboard.ForeColor = System.Drawing.Color.OldLace
+        Me.btnOpenPlugboard.Image = Global.EnigmaMachine.My.Resources.Resources.brushedmetal
+        Me.btnOpenPlugboard.Location = New System.Drawing.Point(260, 556)
+        Me.btnOpenPlugboard.Name = "btnOpenPlugboard"
+        Me.btnOpenPlugboard.Size = New System.Drawing.Size(364, 39)
+        Me.btnOpenPlugboard.TabIndex = 54
+        Me.btnOpenPlugboard.Text = "Plugboard"
+        Me.btnOpenPlugboard.UseVisualStyleBackColor = True
+        '
+        'btnExittomenu
+        '
+        Me.btnExittomenu.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnExittomenu.Location = New System.Drawing.Point(794, 12)
+        Me.btnExittomenu.Name = "btnExittomenu"
+        Me.btnExittomenu.Size = New System.Drawing.Size(81, 21)
+        Me.btnExittomenu.TabIndex = 55
+        Me.btnExittomenu.Text = "Exit To Menu"
+        Me.btnExittomenu.UseVisualStyleBackColor = True
+        '
+        'btnSave
+        '
+        Me.btnSave.Location = New System.Drawing.Point(795, 983)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(75, 23)
+        Me.btnSave.TabIndex = 56
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(714, 983)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 57
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'btnPurge
+        '
+        Me.btnPurge.Location = New System.Drawing.Point(12, 983)
+        Me.btnPurge.Name = "btnPurge"
+        Me.btnPurge.Size = New System.Drawing.Size(107, 23)
+        Me.btnPurge.TabIndex = 58
+        Me.btnPurge.Text = "Purge Saved Files"
+        Me.btnPurge.UseVisualStyleBackColor = True
+        '
         'EnigmaMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -854,6 +913,11 @@ Partial Class EnigmaMain
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.BackgroundImage = Global.EnigmaMachine.My.Resources.Resources.images
         Me.ClientSize = New System.Drawing.Size(884, 1041)
+        Me.Controls.Add(Me.btnPurge)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.btnSave)
+        Me.Controls.Add(Me.btnExittomenu)
+        Me.Controls.Add(Me.btnOpenPlugboard)
         Me.Controls.Add(Me.InputTextbox)
         Me.Controls.Add(Me.OutputTextbox)
         Me.Controls.Add(Me.btnReflectorC)
@@ -938,4 +1002,9 @@ Partial Class EnigmaMain
     Friend WithEvents labWindowRrotorPrev As Label
     Friend WithEvents btnReflectorB As Button
     Friend WithEvents btnReflectorC As Button
+    Friend WithEvents btnOpenPlugboard As Button
+    Friend WithEvents btnExittomenu As Button
+    Friend WithEvents btnSave As Button
+    Friend WithEvents btnClear As Button
+    Friend WithEvents btnPurge As Button
 End Class

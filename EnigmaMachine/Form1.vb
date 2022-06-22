@@ -1,4 +1,8 @@
-﻿Public Class EnigmaMain
+﻿Imports System.IO
+Imports System.Text
+Public Class EnigmaMain
+
+
     Dim intTempLBtn As Integer
     Dim intTempMBtn As Integer
     Dim intTempRBtn As Integer
@@ -32,8 +36,17 @@
     Dim temp As String
     Dim nextrotorrotate As Boolean
     Dim outputletter As String
+    Dim plugboardsettings As String
 
     Dim AddSpacesCounter As Integer
+
+    Dim KeyPressedYetBool As Boolean
+    Dim outputfilerotororder As String
+    Dim outputfilerotorsetting As String
+    Dim outputfilereflectorsetting As String
+    Dim outputfileplugboardsetting As String
+    'Dim outputfileplaintext As String
+    'Dim outputfileoutputtext As String
 
     Dim leftrotortempbool As Boolean 'fix this
 
@@ -43,6 +56,7 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        KeyPressedYetBool = False
         intTempLBtn = 1
         intTempMBtn = 2
         intTempRBtn = 3
@@ -203,6 +217,22 @@
 
     Private Sub Enigmamain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
 
+        If KeyPressedYetBool = False Then
+            outputfilerotororder = (btnLrotor.Text & ", " & btnMrotor.Text & ", " & btnRrotor.Text)
+            outputfilerotorsetting = labWindowLrotor.Text & labWindowMrotor.Text & labWindowRrotor.Text
+            If btnReflectorB.FlatStyle = FlatStyle.Flat Then
+                outputfilereflectorsetting = "B"
+            Else
+                outputfilereflectorsetting = "C"
+            End If
+            outputfileplugboardsetting = plugboardsettings
+            KeyPressedYetBool = True
+        End If
+
+
+
+
+
         While keypressindex = 0
             If e.KeyCode >= 65 And e.KeyCode <= 90 Then
                 keypressed = Chr(e.KeyCode)
@@ -259,9 +289,8 @@
     End Sub
 
     Function RotorCycle(inputletter)
-        'nextrotorrotate = False
         reflected = False
-        'inputletter = PlugboardFunc(inputletter)
+        inputletter = PlugboardFunc(inputletter)
         leftrotortempbool = True
         inputletter = RotorFunc(inputletter, rightrotor, rnotch, labWindowRrotor, labWindowRrotorNext, labWindowRrotorPrev)
         leftrotortempbool = False
@@ -272,7 +301,7 @@
         inputletter = RotorFunc(inputletter, leftrotor, lnotch, labWindowLrotor, labWindowLrotorNext, labWindowLrotorPrev)
         inputletter = RotorFunc(inputletter, middlerotor, mnotch, labWindowMrotor, labWindowMrotorNext, labWindowMrotorPrev)
         inputletter = RotorFunc(inputletter, rightrotor, rnotch, labWindowRrotor, labWindowRrotorNext, labWindowRrotorPrev)
-        'inputletter = PlugboardFunc(inputletter)
+        inputletter = PlugboardFunc(inputletter)
         RotorCycle = inputletter
         reflected = False
     End Function
@@ -333,11 +362,20 @@
         RotorFunc = newletter
     End Function
 
-
+    Function PlugboardFunc(letter)
+        Dim newletter As String
+        newletter = letter
+        For i = 1 To 26
+            If letter = plugboard(1, i) Then
+                newletter = plugboard(2, i)
+            End If
+        Next
+        PlugboardFunc = newletter
+    End Function
 
     Function ReflectorFunc(letter)
-
         Dim newletter As String
+
         newletter = "!!!if you see this - it is broken!!!"
 
         For i = 1 To 26
@@ -345,10 +383,74 @@
                 newletter = reflector(2, i)
             End If
         Next
-        'MsgBox("reflector" + newletter)
         ReflectorFunc = newletter
 
     End Function
+
+    Private Sub btnOpenPlugboard_Click(sender As Object, e As EventArgs) Handles btnOpenPlugboard.Click
+        Dim openingtext As String
+        openingtext = ("Enter Plugboard Connections." + Chr(13) + Chr(13) + "Refer to the Help Menu or User Documentation for further help.")
+        plugboardsettings = InputBox(openingtext, "Plugboard Input", "")
+        For i = 1 To Len(plugboardsettings) Step 2
+            plugboard(1, i) = Mid(plugboardsettings, i, 1)
+            plugboard(2, i) = Mid(plugboardsettings, i + 1, 1)
+            plugboard(1, i + 1) = Mid(plugboardsettings, i + 1, 1)
+            plugboard(2, i + 1) = Mid(plugboardsettings, i, 1)
+        Next
+    End Sub
+
+    Private Sub btnExittomenu_Click(sender As Object, e As EventArgs) Handles btnExittomenu.Click
+        Me.Visible() = False
+        Form3.Visible() = True
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        KeyPressedYetBool = False
+        AddSpacesCounter = 0
+        InputTextbox.Text = ""
+        OutputTextbox.Text = ""
+    End Sub
+
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+
+        i = 0
+        If My.Computer.FileSystem.DirectoryExists(
+            My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\EnigmaMachineOutputs") = False Then
+            My.Computer.FileSystem.CreateDirectory(
+                My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\EnigmaMachineOutputs")
+        End If
+        For Each filefound In My.Computer.FileSystem.GetFiles(
+            My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\EnigmaMachineOutputs")
+            i = i + 1
+        Next
+        Dim newfilename As String
+        newfilename = (My.Computer.FileSystem.SpecialDirectories.MyDocuments &
+                       "\EnigmaMachineOutputs\" & Format(Date.Today, "ddMMyyyy") & "EnigmaOutput" & Str(i) & ".txt")
+        Dim file As StreamWriter
+        file = My.Computer.FileSystem.OpenTextFileWriter(newfilename, True)
+        file.WriteLine("Date of File Creation: " & Date.Today)
+        file.WriteLine("Rotor Order:           " & outputfilerotororder)
+        file.WriteLine("Rotor Setting:         " & outputfilerotorsetting)
+        file.WriteLine("Reflector Setting:     " & outputfilereflectorsetting)
+        file.WriteLine("Plugboard Setting:     " & outputfileplugboardsetting)
+        file.WriteLine("Input Text:")
+        file.WriteLine(InputTextbox.Text)
+        file.WriteLine("")
+        file.WriteLine("Output Text:")
+        file.WriteLine(OutputTextbox.Text)
+        file.Close()
+    End Sub
+
+    Private Sub btnPurge_Click(sender As Object, e As EventArgs) Handles btnPurge.Click
+        Dim purgefiles As String
+        purgefiles = MsgBox("Are you sure? This will delete all saved enigma output files!", MsgBoxStyle.YesNo)
+        If purgefiles = MsgBoxResult.Yes Then
+            For Each filefound In My.Computer.FileSystem.GetFiles(
+                    My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\EnigmaMachineOutputs")
+                My.Computer.FileSystem.DeleteFile(filefound)
+            Next
+        End If
+    End Sub
 
 
     'Private Sub EnimgaMain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
