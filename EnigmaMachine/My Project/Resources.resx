@@ -118,22 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="labLampOffV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\labLampOffV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="labLampOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\labLampOn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="brushedmetal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brushedmetal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="labLampOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\labLampOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="labLampOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\labLampOn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="labLampOffV21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\labLampOffV21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="brushedmetal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\brushedmetal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LampboardGuide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LampboardGuide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlugboardGuide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlugboardGuide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReflectorSettingGuide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReflectorSettingGuide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotorOrderGuide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RotorOrderGuide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotorSettingGuide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RotorSettingGuide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveButtonsGuide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveButtonsGuide.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserDocumentationPage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserDocumentationPage1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

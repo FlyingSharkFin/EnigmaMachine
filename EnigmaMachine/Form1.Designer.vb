@@ -874,7 +874,7 @@ Partial Class EnigmaMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnExittomenu.Location = New System.Drawing.Point(794, 12)
         Me.btnExittomenu.Name = "btnExittomenu"
-        Me.btnExittomenu.Size = New System.Drawing.Size(81, 21)
+        Me.btnExittomenu.Size = New System.Drawing.Size(80, 20)
         Me.btnExittomenu.TabIndex = 55
         Me.btnExittomenu.Text = "Exit To Menu"
         Me.btnExittomenu.UseVisualStyleBackColor = True

@@ -119,5 +119,75 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property LampboardGuide() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LampboardGuide", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property PlugboardGuide() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("PlugboardGuide", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ReflectorSettingGuide() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ReflectorSettingGuide", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property RotorOrderGuide() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("RotorOrderGuide", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property RotorSettingGuide() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("RotorSettingGuide", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property SaveButtonsGuide() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("SaveButtonsGuide", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property UserDocumentationPage1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("UserDocumentationPage1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace
